@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>3.2.2 Responsive: Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link href="css/estilos.css" rel="stylesheet" type="text/css"/>-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Formulario</h3>
+            <form>
+                <div class="row">
+                    <div class="form-group col-md-5">
+                        <label for="nombre">Nombre(s)</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control"/>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" class="form-control"/>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label>Sexo</label>
+                        <div class="form-control">
+                            <label class="radio-inline"><input type="radio" name="sexo" value="F"/>Femenino</label>
+                            <label class="radio-inline"><input type="radio" name="sexo" value="M"/>Masculino</label>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label for="nivel">Nivel escolar</label>
+                        <select class="form-control" id="nivel">
+                            <option>Superior</option>
+                            <option>Medio Superior</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <label for="perfil">Perfil</label>
+                        <textarea class="form-control" rows="5" id="perfil"></textarea>
+                    </div>
+                </div>
+                
+                <div class="row col-xs-12">
+                    <button type="submit" class="btn btn-danger">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
